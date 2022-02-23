@@ -19,6 +19,13 @@
 <script>
     var pressedButton = document.getElementsByTagName("button")[0];
     pressedButton.addEventListener("click", function (event) {
-       alert("Will you be my Girl Friend ")
-    })
+      
+        let confirmAction = confirm("Are you sure to execute this action?");
+        if (confirmAction) {
+          alert("Action successfully executed");
+        } else {
+          alert("Action canceled");
+        }
+      }
+   
  </script>
