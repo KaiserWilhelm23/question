@@ -10,20 +10,28 @@
     <h3>I do not know why I spent the time get this site up and going but I guess its because I am nerd or geek, or even just the "government boy" as you like to call me LOL. Actually I am bord XD</h3>
 
     <h3>But this website is for you. So yea LOL</h3>
+	<h3>Will you be my Girl Friend?</h3>
 
-   <button onclick="myFunction()">Click Here</button>
+   <button onclick="myFunction()">Yes</button>
+   <button onclick="No()">No</button>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-  let text;
-  if (confirm("Will you be my girl friend? \nyes=ok, no=cancel") == true) {
-    text = "The fact that you pressed okay is awesome";
-  } else {
-    text = "Redirecting";
-	window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  }
+  
+    text = "You are awesome!!";
+	document.getElementById("demo").innerHTML = text;
+	
+}
+</script>
+
+<script>
+function No() {
+  
+   text = "Redirecting";
+   window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  
   document.getElementById("demo").innerHTML = text;
 }
 </script>
