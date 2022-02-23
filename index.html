@@ -11,21 +11,19 @@
 
     <h3>But this website is for you. So yea LOL</h3>
 
-    <button type="button">Click here for a great question!!!</button>
+   <button onclick="myFunction()">Click Here</button>
 
-
-</center>
+<p id="demo"></p>
 
 <script>
-    var pressedButton = document.getElementsByTagName("button")[0];
-    pressedButton.addEventListener("click", function (event) {
-      
-        let confirmAction = confirm("Are you sure to execute this action?");
-        if (confirmAction) {
-          alert("Action successfully executed");
-        } else {
-          alert("Action canceled");
-        }
-      }
-   
- </script>
+function myFunction() {
+  let text;
+  if (confirm("Will you be my girl friend? \nyes=ok, no=cancel") == true) {
+    text = "You pressed OK!";
+  } else {
+    text = "Redirecting";
+	window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
